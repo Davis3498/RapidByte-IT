@@ -1,1 +1,1 @@
-console.log("Website loaded successfully");
+console.log("Professional version loaded");

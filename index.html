@@ -3,59 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RapidByte IT Services</title>
+    <title>RapidByte IT Services | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>RapidByte IT Services</h1>
-        <p>Fast, reliable local IT support in Manchester</p>
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="brand">
+                <div>
+                    <h1>RapidByte IT Services</h1>
+                    <p class="tagline">Reliable Local Tech Support in Manchester</p>
+                </div>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact us">Contact</a>
-    </nav>
-
     <section class="hero">
-        <h2>Tech Problems Sorted</h2>
-        <p>PC repairs, upgrades, virus removal, Wi-Fi fixes, and general tech support.</p>
-        <p><strong>Same Day Repairs | No Fix No Fee | Local & Trusted</strong></p>
+        <div class="container">
+            <h2>Fast, Straightforward IT Help</h2>
+            <p>
+                PC repairs, laptop troubleshooting, upgrades, virus removal, Wi-Fi fixes,
+                and honest support without the usual rubbish.
+            </p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                <a href="services.html" class="btn btn-secondary">View Services</a>
+            </div>
+            <p class="trust-text">Same Day Repairs | No Fix No Fee | Local & Trusted</p>
+        </div>
     </section>
 
-    <section id="services">
-        <h2>Services</h2>
-        <ul>
-            <li>PC and Laptop Repairs</li>
-            <li>Hardware Upgrades</li>
-            <li>Virus and Malware Removal</li>
-            <li>Wi-Fi and Network Troubleshooting</li>
-            <li>System Cleanup and Speed Optimisation</li>
-            <li>Custom PC Help</li>
-        </ul>
+    <section class="features">
+        <div class="container card-grid">
+            <div class="card">
+                <h3>PC & Laptop Repairs</h3>
+                <p>From boot issues to broken software, I get machines working properly again.</p>
+            </div>
+            <div class="card">
+                <h3>Upgrades & Speed Boosts</h3>
+                <p>SSD installs, RAM upgrades, cleanups, and performance improvements that actually matter.</p>
+            </div>
+            <div class="card">
+                <h3>Home Network Support</h3>
+                <p>Wi-Fi dead spots, router issues, device setup, and general network troubleshooting.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>
-            Fast, expert PC & laptop repairs based in northwest brought to your door. 
-            Serving UK military member delivering disciplined, dependable service for home users, 
-            students & small businesses—upgrades, fixes & troubleshooting, evenings and weekends available.
-
-        </p>
-    </section>
-
-    <section id="contact us">
-        <h2>Contact</h2>
-        <p>Email: rapidbyte@outlook.com</p>
-        <p>Phone: +447745114660</p>
-        <p>Facebook: https://www.facebook.com/RapidByteIT</p>
+    <section class="why-choose">
+        <div class="container">
+            <h2>Why Choose Me</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Honest Advice</h3>
+                    <p>No upselling, no waffle, no mysterious “labour charges” from another planet.</p>
+                </div>
+                <div class="card">
+                    <h3>Fast Turnaround</h3>
+                    <p>I know people need their tech working now, not next century.</p>
+                </div>
+                <div class="card">
+                    <h3>Local Service</h3>
+                    <p>Friendly support for local customers who want proper help from a real person.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>© 2026 RapidByte IT Services. All rights reserved.</p>
+        <div class="container">
+            <p>© 2026 RapidByte IT Services. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
