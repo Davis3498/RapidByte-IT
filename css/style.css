@@ -787,13 +787,100 @@ textarea {
     padding: 70px 0;
   }
 
+  @media (max-width: 1000px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 86px;
+    left: 0;
+    right: 0;
+    background: #070d1a;
+    border-bottom: 1px solid var(--border);
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+  /* =========================
+   NAV / DROPDOWN IMPROVEMENTS
+========================= */
+
+/* Make menu button clickable */
 .menu-toggle {
   cursor: pointer;
- }
-  .site-nav a {
-  cursor: pointer;
- }
-  .menu-toggle:hover {
+  transition: 0.2s ease;
+}
+
+/* Optional hover for menu button */
+.menu-toggle:hover {
   background: rgba(255,255,255,0.05);
+}
+
+/* Nav links base */
+.site-nav a {
+  position: relative;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+/* Glow hover effect */
+.site-nav a:hover {
+  color: #fff;
+  background: rgba(53, 189, 246, 0.12);
+  box-shadow: 0 0 12px rgba(53, 189, 246, 0.4);
+  text-shadow: 0 0 8px rgba(53, 189, 246, 0.7);
+  transform: translateY(-2px);
+}
+
+/* Active page styling */
+.site-nav .active {
+  background: rgba(53, 189, 246, 0.18);
+  box-shadow: 0 0 10px rgba(53, 189, 246, 0.3);
+  color: #fff;
+}
+
+/* =========================
+   MOBILE DROPDOWN FIX
+========================= */
+
+@media (max-width: 1000px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 86px;
+    left: 0;
+    right: 0;
+    background: #070d1a;
+    border-bottom: 1px solid var(--border);
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* When menu is opened via JS */
+  .site-nav.open {
+    display: flex;
+  }
+
+  /* Make mobile links bigger/easier to tap */
+  .site-nav a {
+    width: 100%;
+    padding: 14px;
+    text-align: center;
+  }
+}
 }
 }
