@@ -1,8 +1,8 @@
-const menuToggle = document.getElementById("menuToggle");
+const menuToggleButton = document.getElementById("menuToggle");
 const siteNav = document.getElementById("siteNav");
 
-if (menuToggle && siteNav) {
-  menuToggle.addEventListener("click", () => {
+if (menuToggleButton && siteNav) {
+  menuToggleButton.addEventListener("click", () => {
     siteNav.classList.toggle("open");
   });
 }
